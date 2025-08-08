@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <link rel="manifest" href="manifest.json" />
+<meta name="theme-color" content="#2563eb" />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitVitals Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Navbar (reuse) -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-green-600">FitVitals</h1>
+      <nav class="space-x-6 hidden md:block">
+        <a href="index.html" class="text-gray-700 hover:text-green-600">Home</a>
+        <a href="#" class="text-green-700 font-semibold">Dashboard</a>
+        <a href="vitals.html" class="text-gray-700 hover:text-green-600">Vitals</a>
+        <a href="bmi.html" class="text-gray-700 hover:text-green-600">BMI</a>
+        <a href="reminders.html" class="text-gray-700 hover:text-green-600">Reminders</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Dashboard Section -->
+  <section class="container mx-auto px-6 py-10">
+    <h2 class="text-3xl font-bold mb-8 text-center text-green-700">Your Health Overview</h2>
+
+    <!-- Vitals Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-10">
+      <div class="bg-white p-6 rounded-lg shadow text-center">
+        <h3 class="text-xl font-semibold text-gray-700">Blood Pressure</h3>
+        <p class="text-2xl text-green-600 mt-2">120/80</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow text-center">
+        <h3 class="text-xl font-semibold text-gray-700">Sugar Level</h3>
+        <p class="text-2xl text-green-600 mt-2">95 mg/dL</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow text-center">
+        <h3 class="text-xl font-semibold text-gray-700">Oxygen</h3>
+        <p class="text-2xl text-green-600 mt-2">98%</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow text-center">
+        <h3 class="text-xl font-semibold text-gray-700">Pulse</h3>
+        <p class="text-2xl text-green-600 mt-2">72 bpm</p>
+      </div>
+    </div>
+
+    <!-- Water Intake -->
+    <div class="bg-white p-6 rounded-lg shadow mb-6">
+      <h3 class="text-lg font-semibold text-gray-700 mb-2">Water Intake</h3>
+      <div class="w-full bg-gray-200 rounded-full h-4">
+        <div class="bg-blue-500 h-4 rounded-full" style="width: 70%;"></div>
+      </div>
+      <p class="text-sm mt-2 text-gray-500">1.4L out of 2L</p>
+    </div>
+
+    <!-- Sleep Tracker -->
+    <div class="bg-white p-6 rounded-lg shadow mb-6">
+      <h3 class="text-lg font-semibold text-gray-700 mb-2">Sleep Tracker</h3>
+      <div class="w-full bg-gray-200 rounded-full h-4">
+        <div class="bg-purple-500 h-4 rounded-full" style="width: 85%;"></div>
+      </div>
+      <p class="text-sm mt-2 text-gray-500">6.8 hrs out of 8 hrs</p>
+    </div>
+
+    <!-- Health Score -->
+    <div class="bg-white p-6 rounded-lg shadow text-center">
+      <h3 class="text-lg font-semibold text-gray-700 mb-2">Overall Health Score</h3>
+      <p class="text-4xl text-green-600 font-bold">86%</p>
+    </div>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+[
+  {
+    "date": "2025-08-05",
+    "bloodPressure": "120/80",
+    "sugar": 95,
+    "oxygen": 98,
+    "pulse": 72
+  },
+  {
+    "date": "2025-08-06",
+    "bloodPressure": "125/85",
+    "sugar": 102,
+    "oxygen": 97,
+    "pulse": 76
+  },
+  {
+    "date": "2025-08-07",
+    "bloodPressure": "118/78",
+    "sugar": 90,
+    "oxygen": 99,
+    "pulse": 70
+  }
+]

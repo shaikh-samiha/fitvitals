@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <link rel="manifest" href="manifest.json" />
+<meta name="theme-color" content="#2563eb" />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitVitals - Health & Wellness Tracker</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-green-600">FitVitals</h1>
+      <nav class="space-x-6 hidden md:block">
+        <a href="#" class="text-gray-700 hover:text-green-600">Home</a>
+        <a href="dashboard.html" class="text-gray-700 hover:text-green-600">Dashboard</a>
+        <a href="vitals.html" class="text-gray-700 hover:text-green-600">Vitals</a>
+        <a href="bmi.html" class="text-gray-700 hover:text-green-600">BMI</a>
+        <a href="reminders.html" class="text-gray-700 hover:text-green-600">Reminders</a>
+      </nav>
+      <button class="md:hidden text-green-600 focus:outline-none">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-green-100 py-20 px-6 text-center">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-4 text-green-700">Track Your Health, Daily 🌱</h2>
+    <p class="text-lg md:text-xl text-gray-700 max-w-xl mx-auto mb-8">
+      FitVitals helps you monitor your vitals, sleep, water intake, and more – all from a clean and intuitive interface.
+    </p>
+    <a href="dashboard.html" class="inline-block px-8 py-3 bg-green-600 text-white font-semibold rounded-lg shadow hover:bg-green-700 transition">
+      Get Started
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-center py-6 mt-20 border-t">
+    <p class="text-gray-600">&copy; 2025 FitVitals. All rights reserved.</p>
+  </footer>
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker
+        .register("/service-worker.js")
+        .then((reg) => console.log("✅ Service Worker registered:", reg.scope))
+        .catch((err) => console.error("❌ Service Worker failed:", err));
+    });
+  }
+</script>
+
+</body>
+</html>
